@@ -18,3 +18,9 @@ El sensor remoto consta de un Arduino MEGA conectado a multiples módulos:
 
 ## Servidor Local:
 El Servidor que procesa la información se basa en un programa Python, que valida los datos recibidos por bluetooth con una Base de Datos y retorna el resultado. Para la comunicación Bluetooth, se emplea la librería PyBLuez bajo un entorno Linux Mint.
+
+# Versiones de software
+Al momento de hacer este proyecto, utilice las siguientes especificaciones:
+  - **SO:** Linux Mint 19.2 "Tina".
+  - **Python:** Versión 3.7.2
+  - **Arduino IDE:** Versión 1.8.9
