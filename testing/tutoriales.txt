@@ -1,0 +1,15 @@
+-------------------------------------------------------------------
+RFID
+https://naylampmechatronics.com/blog/22_Tutorial-Lector-RFID-RC522.html
+
+-------------------------------------------------------------------
+Bluetooth
+http://computointegrado.blogspot.com/2012/02/python-arduino-con-modulo-de-bluetooth.html
+
+https://www.element14.com/community/thread/72126/l/arduino-bluetooth-send-data-to-python-stuck?displayFullThread=true --> Use este para hacer funcionar el pyBluez
+
+https://robologs.net/2015/06/20/construir-un-robot-bluetooth-con-arduino-y-python/
+
+-------------------------------------------------------------------
+Keypad y LCD
+http://www.circuitbasics.com/how-to-set-up-a-keypad-on-an-arduino/
