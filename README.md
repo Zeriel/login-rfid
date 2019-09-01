@@ -9,11 +9,11 @@ El usuario debe identificarse con una tarjeta/tag RFID y clave numérica de 3 di
 # Tecnologías empleadas
 ## Sensor remoto:
 El sensor remoto consta de un Arduino MEGA conectado a multiples módulos:
-  - RFID RC522: La base del Sistema, sensor de lectura/escritura de medios RFID para identificación.
-  - KeyPad 3x4/4x4: Teclado para el ingreso de una clave asociada a la tarjeta.
-  - HC-05 ZS040: Dispositivo Bluetooth para la comunicación entre los sensores y el Servidor.
-  - Pantalla LCD: Pantalla que realiza la interacción entre el usuario y el Sistema.
-  - Buzzer: Dispositivo para asistir a la pantalla LCD en la comunicación con el usuario mediante códigos beep.
+  - **RFID RC522:** La base del Sistema, sensor de lectura/escritura de medios RFID para identificación.
+  - **KeyPad 3x4/4x4:** Teclado para el ingreso de una clave asociada a la tarjeta.
+  - **HC-05 ZS040:** Dispositivo Bluetooth para la comunicación entre los sensores y el Servidor.
+  - **Pantalla LCD 1602 con I2C:** Pantalla que realiza la interacción entre el usuario y el Sistema.
+  - **Buzzer:** Dispositivo para asistir a la pantalla LCD en la comunicación con el usuario mediante códigos beep.
 
 
 ## Servidor Local:
