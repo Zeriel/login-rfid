@@ -5,8 +5,8 @@
 #include <SoftwareSerial.h>  
   
 // Define los pines RX y TX para el HC-05  
-const int rxpin = 8;  
-const int txpin = 9;  
+const int rxpin = 22;  
+const int txpin = 24;  
   
 // Variables para almacenar datos de entrada  
 char rec= 'A';  
