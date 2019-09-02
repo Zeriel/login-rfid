@@ -23,7 +23,9 @@ try:
     # Intenta conectarse al numero de MAC y puerto especificados
     sock = bluetooth.BluetoothSocket( bluetooth.RFCOMM )
     sock.connect((bd_addr, port))
-    print("Conectando!")
+    print("Conectado!")
+    # El Arduino espera un "y" para confirmar que el Servidor establecio la conexion
+    data = "y"
     close_bt = False
     # Mientras el arduino no envie "e", se espera un input
     while not close_bt:
