@@ -15,8 +15,11 @@
     // DEFINICIONES PARA BLUETOOTH
     //Define the pins used for receiving  
     //and transmitting information via Bluetooth  
-    const int rxpin = 50;  
-    const int txpin = 51;  
+    //const int rxpin = 50;  
+    //const int txpin = 51;  
+
+    const int rxpin = 62;  // NINGUNO de los RX del MEGA funcionaba, encontre en StackOverflow que este puerto podria servir como RX, y funciono
+    const int txpin = 14; 
       
     //Variable to store input value  
     char rec= 'A';  

@@ -1,0 +1,18 @@
+CREATE TABLE IF NOT EXISTS usuarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(45) NOT NULL,
+    apellido VARCHAR(45) NOT NULL,
+    dni VARCHAR(8) NOT NULL,
+    tag_id VARCHAR(8) NOT NULL,
+    tag_clave VARCHAR(3) NOT NULL,
+    fecha_creacion TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+)  ENGINE=INNODB;
+
+CREATE TABLE IF NOT EXISTS log_accesos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    fecha_ingreso TIMESTAMP NOT NULL,
+    pudo_ingresar TINYINT NOT NULL,
+    id_usuario INT NOT NULL,
+    FOREIGN KEY (id_usuario)
+        REFERENCES usuarios (id)
+)  ENGINE=INNODB;

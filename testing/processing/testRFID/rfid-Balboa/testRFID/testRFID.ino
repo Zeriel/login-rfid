@@ -1,3 +1,10 @@
+#include <MFRC522Extended.h>
+#include <require_cpp11.h>
+#include <deprecated.h>
+#include <MFRC522.h>
+
+
+
 // Sketch de prueba del RFID, sacado de la documentacion
 
 #include <SPI.h>
@@ -18,6 +25,7 @@ void loop() {
   // Revisamos si hay nuevas tarjetas  presentes
   if ( mfrc522.PICC_IsNewCardPresent()) 
         {  
+          printf("Card present\n");
       //Seleccionamos una tarjeta
             if ( mfrc522.PICC_ReadCardSerial()) 
             {
