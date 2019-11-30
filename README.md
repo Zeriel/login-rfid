@@ -1,5 +1,5 @@
 # Resumen
-Sistema de acceso mediante tecnología RFID, diseñado para la cátedra de Sistemas de Transmisión Inalámbrica de la UTN FRLP.
+Sistema de acceso mediante tecnología RFID, diseñado para la cátedra de Sistemas de Transmisión Inalámbrica de la UTN FRLP en el 2019.
 
 # Descripción
 El Sistema se basa en un sensor remoto para detectar una tarjeta o tag de acceso RFID (cliente), y un Servicor Local que procesa los datos enviados y valida el acceso. La transferencia de datos se realiza mediante bluetooth.
