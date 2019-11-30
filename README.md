@@ -2,12 +2,21 @@
 Sistema de acceso mediante tecnología RFID, diseñado para la cátedra de Sistemas de Transmisión Inalámbrica de la UTN FRLP.
 
 # Descripción
-El Sistema se basa en un sensor remoto para detectar una tarjeta o tag de acceso RFID, y un Servicor Local que procesa los datos enviados y valida el acceso. La transferencia de datos se realiza mediante bluetooth.
+El Sistema se basa en un sensor remoto para detectar una tarjeta o tag de acceso RFID (cliente), y un Servicor Local que procesa los datos enviados y valida el acceso. La transferencia de datos se realiza mediante bluetooth.
 
-El usuario debe identificarse con una tarjeta/tag RFID y clave numérica de 3 digitos. El Servidor validará esta información y retornará el resultado, que se le mostrará al usuario mediante una pantalla LCD y un beep-code.
+El usuario debe identificarse con una tarjeta/tag RFID y clave numérica de 3 digitos. El Servidor validará esta información con una Base de Datos local y retornará el resultado, que se le mostrará al usuario mediante una pantalla LCD y un beep-code.
+
+# Instalación
+## Sensor remoto o cliente:
+Dentro del direcotrio "main/arduino", cargar el código en el Arduino.
+
+## Servidor local
+En la computadora que hace de Server, instalar un motor de Base de Datos, y ejecutar las consultas SQL dentro del directorio "main/mysql". Editar el archivo "insert-usuarios.sql" con los datos de usuarios y tarjetas asociadas deseado.
+
+En el directorio "main/python", editar el archivo "server.py" con los datos de la Base de Datos y módulo Bluetooth empleado, y ejecutar el mismo desde Python para iniciar el Servidor.
 
 # Tecnologías empleadas
-## Sensor remoto:
+## Sensor remoto o Cliente:
 El sensor remoto consta de un Arduino MEGA conectado a multiples módulos:
   - **RFID RC522:** La base del Sistema, sensor de lectura/escritura de medios RFID para identificación.
   - **KeyPad 3x4/4x4:** Teclado para el ingreso de una clave asociada a la tarjeta.
@@ -24,3 +33,4 @@ Al momento de hacer este proyecto, utilice las siguientes especificaciones:
   - **SO:** Linux Mint 19.2 "Tina".
   - **Python:** Versión 3.7.2
   - **Arduino IDE:** Versión 1.8.9
+  - **Base de Datos:** MySQL Versión 5.7.27

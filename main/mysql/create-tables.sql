@@ -10,9 +10,7 @@ CREATE TABLE IF NOT EXISTS usuarios (
 
 CREATE TABLE IF NOT EXISTS log_accesos (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    fecha_ingreso TIMESTAMP NOT NULL,
+    fecha_ingreso TIMESTAMP  DEFAULT CURRENT_TIMESTAMP,
     pudo_ingresar TINYINT NOT NULL,
-    id_usuario INT NOT NULL,
-    FOREIGN KEY (id_usuario)
-        REFERENCES usuarios (id)
+    id_usuario INT NOT NULL
 )  ENGINE=INNODB;
